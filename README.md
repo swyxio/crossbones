@@ -30,9 +30,18 @@ yarn
 yarn start
 ```
 
-### Known Issues
+## Suggestions and Known Issues
 
-How to fix yellow warnings about `resizeMode`: <https://stackoverflow.com/questions/45212514/warning-failed-prop-type-invalid-props-style-key-resizemode-supplied-to-rct>
+- [Add firebase authentication](https://medium.com/@jamesmarino/getting-started-with-react-native-and-firebase-ab1f396db549)
+- [Add more RN components](https://github.com/jondot/awesome-react-native#components) - you may need to eject if you use non Expo API functionality
+- [How to fix yellow warnings about `resizeMode`](https://stackoverflow.com/questions/45212514/warning-failed-prop-type-invalid-props-style-key-resizemode-supplied-to-rct)
+
+## Contribute
+
+We need help with:
+
+- testing this for Android
+- more research into best practice RN architecture (eg [ReduxPersist rehydration](https://shift.infinite.red/shipping-persistant-reducers-7341691232b1) which we implemented here)
 
 Instructions from CRNA follow:
 ---

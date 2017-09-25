@@ -1,4 +1,6 @@
 import axios from 'axios'
+// consider adding firebase https://medium.com/@jamesmarino/getting-started-with-react-native-and-firebase-ab1f396db549
+
 
 const AUTHENTICATED = 'AUTHENTICATED'
 
