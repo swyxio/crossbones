@@ -1,0 +1,1 @@
+The Home Screen consists of 4 Tabs: Buttons, Lists, Forms, and Bones. the default is Bones. enjoy.
