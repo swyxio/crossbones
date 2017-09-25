@@ -29,6 +29,17 @@ Short and sweet:
 yarn
 yarn start
 ```
+## TROUBLESHOOTING
+
+1. `npm run clean` or 
+
+```sh
+npm run newclear
+npm i
+react-native run-ios
+```
+
+If you have a corrupted RN cache, `rm -rf ~/.rncache` may help.
 
 ## Suggestions and Known Issues
 

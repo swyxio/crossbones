@@ -13,7 +13,19 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
+    "test": "node node_modules/jest/bin/jest.js --watch",
+		"clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && npm cache clean --force",
+		"clean:android": "cd android/ && ./gradlew clean && cd .. && react-native run-android",
+		"newclear": "rm -rf $TMPDIR/react-* && watchman watch-del-all && rm -rf ios/build && rm -rf node_modules/ && npm cache clean --force && npm i",
+		"test:watch": "jest --watch",
+		"updateSnapshot": "jest --updateSnapshot",
+		"coverage": "jest --coverage && open coverage/lcov-report/index.html || xdg-open coverage/lcov-report/index.html",
+		"android:build": "cd android && ./gradlew assembleRelease",
+		"android:install": "cd android && ./gradlew assembleRelease && ./gradlew installRelease",
+		"android:hockeyapp": "cd android && ./gradlew assembleRelease && puck -submit=auto app/build/outputs/apk/app-release.apk",
+		"android:devices": "$ANDROID_HOME/platform-tools/adb devices",
+		"android:logcat": "$ANDROID_HOME/platform-tools/adb logcat *:S ReactNative:V ReactNativeJS:V",
+		"android:shake": "$ANDROID_HOME/platform-tools/adb devices | grep '\\t' | awk '{print $1}' | sed 's/\\s//g' | xargs -I {} $ANDROID_HOME/platform-tools/adb -s {} shell input keyevent 82"
   },
   "jest": {
     "preset": "jest-expo"
