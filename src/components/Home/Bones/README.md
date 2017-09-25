@@ -1,1 +1,0 @@
-This is just a nice landing page for first time Bones users. This used to be the Fonts screen and I have left `fonts` related files in here in case you ever want to crib from them but in most cases you will want to delete them (really anything here is up to you to delete).

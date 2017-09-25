@@ -25,7 +25,6 @@ import fontelloConfig from '../../assets/fontello/config.json';
 class Bones extends Component {
   render() {
     const { navigation, auth, login } = this.props;
-    // console.log('auth', auth)
     return (
       <ScrollView>
         <View style={styles.hero}>
