@@ -1,6 +1,6 @@
 # Hi, I'm CrossBones
 
-I'm a happy little cross-platform skeleton. You can clone me to use as a starter on your react native projects!
+I'm a happy little cross-platform skeleton. You can clone me to use as a starter on your react native projects! [See my video for explanation](https://www.youtube.com/watch?v=QFIj6iiqjWw)
 
 I have:
 
