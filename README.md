@@ -1,7 +1,40 @@
-<https://stackoverflow.com/questions/45212514/warning-failed-prop-type-invalid-props-style-key-resizemode-supplied-to-rct>
+# Hi, I'm CrossBones
 
+I'm a happy little cross-platform skeleton. You can clone me to use as a starter on your react native projects!
 
+I have:
 
+- [React Native](https://facebook.github.io/react-native/), 
+- [React Native Elements](https://github.com/react-native-training/react-native-elements),
+- [React-Navigation](https://github.com/react-community/react-navigation) and 
+- Redux (including [Redux Thunk](https://github.com/gaearon/redux-thunk) and [Redux Persist](https://github.com/rt2zz/redux-persist)) 
+
+all just rattling around in here ready to go. 
+I am built on top of [Create React Native App](https://github.com/react-community/create-react-native-app); 
+please scroll down for instructions on how to install or eject.
+
+![bones demo](bones.gif)
+
+## 1. Make me into something!
+
+We recommend that you **clone**, not fork, this repo – unless your intention is
+to develop CrossBones proper instead of using CrossBones as the starting point for your
+own application.
+
+## 2. Start me dusty heart
+
+Short and sweet:
+
+```sh
+yarn
+yarn start
+```
+
+### Known Issues
+
+How to fix yellow warnings about `resizeMode`: <https://stackoverflow.com/questions/45212514/warning-failed-prop-type-invalid-props-style-key-resizemode-supplied-to-rct>
+
+Instructions from CRNA follow:
 ---
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
