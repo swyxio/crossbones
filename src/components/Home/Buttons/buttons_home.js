@@ -1,4 +1,3 @@
-import Expo, { Font } from 'expo';
 import React, { Component } from 'react';
 import { View, ScrollView, StyleSheet, Platform } from 'react-native';
 import { createIconSetFromFontello } from 'react-native-vector-icons';
@@ -22,25 +21,6 @@ const log = () => {
 };
 
 class Buttons extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      fontLoaded: false
-    };
-  }
-
-  componentDidMount() {
-    Font.loadAsync({
-      fontello: require('../../assets/fontello/font/fontello.ttf')
-    }).then(() => {
-      registerCustomIconType(
-        'fontello',
-        createIconSetFromFontello(fontelloConfig)
-      );
-      this.setState({ fontLoaded: true });
-    });
-  }
   render() {
     const { navigation } = this.props;
 
@@ -342,19 +322,6 @@ class Buttons extends Component {
               name="touch-app"
               onPress={() => console.log('hello')}
             />
-          </View>
-        </Card>
-        <Card title="CUSTOM ICONS" containerStyle={{ marginTop: 15 }}>
-          <View style={[styles.socialRow, { marginVertical: 10 }]}>
-            {!this.state.fontLoaded && <Text>Loading Custom Font</Text>}
-            {this.state.fontLoaded && (
-              <Icon
-                onPress={() => navigation.navigate('Icons_Detail')}
-                type="fontello"
-                color="#e14329"
-                name="magic"
-              />
-            )}
           </View>
         </Card>
         <Card

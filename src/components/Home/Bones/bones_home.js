@@ -1,4 +1,3 @@
-import Expo, { Font } from 'expo';
 import React, { Component } from 'react';
 import { View, ScrollView, StyleSheet, Platform, TouchableOpacity } from 'react-native';
 import { createIconSetFromFontello } from 'react-native-vector-icons';
